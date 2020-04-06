@@ -1,10 +1,11 @@
-# rdrp_drugsales
+# ai_drugsale
 
 This is a script that makes you able to sell any drug item to the closest ped using E
 
 ### Features
 - Well optimized script
 - Supports editable config.
+- Currently setup for DoPeMan17's esx_drug with coke, lsd, meth and heroin in the config.
 
 ## Download & Installation
 
@@ -21,5 +22,5 @@ git clone https://github.com/qalle-fivem/rdrp_drugsales
 - Add this to your `server.cfg`:
 
 ```
-start rdrp_drugsales
+start ai_drugsale
 ```
