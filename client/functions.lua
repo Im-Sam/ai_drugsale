@@ -1,6 +1,6 @@
 TryToSell = function(pedId)
     if not DoesEntityExist(pedId) or IsPedDeadOrDying(pedId) or IsPedAPlayer(pedId) or IsPedFalling(pedId) or GetPedType(pedId) == 28 then
-        Citizen.Trace("rdrp_drugsales: ped: " .. pedId .. " not able to sell to.")
+        Citizen.Trace("ai_drugsale: ped: " .. pedId .. " not able to sell to.")
 
         return
     end
@@ -27,7 +27,7 @@ TryToSell = function(pedId)
 end
 
 Sell = function()
-    ESX.TriggerServerCallback("rdrp_drugsales:sellDrug", function(soldDrug)
+    ESX.TriggerServerCallback("ai_drugsale:sellDrug", function(soldDrug)
         if soldDrug then
             ESX.ShowNotification("Thanks!")
         else
