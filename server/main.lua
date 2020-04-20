@@ -4,7 +4,7 @@ TriggerEvent("esx:getSharedObject", function(response)
     ESX = response
 end)
 
-ESX.RegisterServerCallback("rdrp_drugsales:sellDrug", function(source, cb)
+ESX.RegisterServerCallback("ai_drugsale:sellDrug", function(source, cb)
     local player = ESX.GetPlayerFromId(source)
 
     if player then
